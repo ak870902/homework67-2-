@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o ªwªj±Æ§Ç.o ¶Ã¼Æ.o
-LINKOBJ  = main.o ªwªj±Æ§Ç.o ¶Ã¼Æ.o
+OBJ      = main.o ªwªj±Æ§Ç.o
+LINKOBJ  = main.o ªwªj±Æ§Ç.o
 LIBS     = -L"C:/install/C»y¨¥/DevCppPortable/MinGW64/lib" -L"C:/install/C»y¨¥/DevCppPortable/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/install/C»y¨¥/DevCppPortable/MinGW64/include" -I"C:/install/C»y¨¥/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"C:/install/C»y¨¥/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/install/C»y¨¥/DevCppPortable/MinGW64/include" -I"C:/install/C»y¨¥/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"C:/install/C»y¨¥/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/install/C»y¨¥/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -26,3 +26,6 @@ $(BIN): $(OBJ)
 
 main.o: main.c
 	$(CC) -c main.c -o main.o $(CFLAGS)
+
+ªwªj±Æ§Ç.o: ªwªj±Æ§Ç.c
+	$(CC) -c ªwªj±Æ§Ç.c -o ªwªj±Æ§Ç.o $(CFLAGS)
