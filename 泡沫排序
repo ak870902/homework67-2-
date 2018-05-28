@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-void S1(int*  data1)
+void S1(int* const data1)
 {
 	int i,j,temp;
 	printf("由小到大:");

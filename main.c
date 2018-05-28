@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 void S0 (int *data);
-void S1 ( int * data1);
+void S1 ( int *const data1);
 
 
 int main(void)
